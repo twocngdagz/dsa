@@ -1,6 +1,6 @@
 <?php
 
-namespace datatype;
+namespace data\type;
 
 /**
  * LIFO data type.
@@ -42,5 +42,15 @@ class Stack
     public function peek()
     {
         return end($this->stack);
+    }
+
+    /**
+     * Count the stack items.
+     * 
+     * @return int The count of items  
+     */
+    public function count()
+    {
+        return count($this->stack);
     }
 }

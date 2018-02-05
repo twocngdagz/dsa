@@ -1,6 +1,6 @@
 <?php
 
-namespace datatype;
+namespace data\type;
 
 /**
  * FIFO data type.
@@ -32,5 +32,15 @@ class Queue
     public function dequeue()
     {
         return array_shift($this->queue);
+    }
+
+    /**
+     * Count the queue items.
+     * 
+     * @return int The count of items  
+     */
+    public function count()
+    {
+        return count($this->queue);
     }
 }
